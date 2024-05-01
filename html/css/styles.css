@@ -1,0 +1,373 @@
+body {
+    background-color: #BBAA99;
+    color: #7711CC;
+    font-size: 16px;
+    font-family: 'Lucida Bright', 'Liberation';
+  }
+  
+  a {
+    text-decoration: none;
+    color: #7711CC;
+  }
+  
+  a:visited {
+    color: #8822DD;
+  }
+  
+  ol, ul {
+    line-height: 200%;
+  }
+  
+  .ender {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    text-align: right;
+    line-height: 140%;
+    font-size: 14px;
+    font-family: 'Karla', 'Verdana', 'Ubuntu';
+  }
+  
+  .imgLogo {
+    border-bottom: 3px solid #402020;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+  }
+  
+  .apres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    float: left;
+    margin-top: 100px;
+  }
+  .apres img {
+    align-self: center;
+    float: left;
+  }
+  .apres p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  nav ul {
+    list-style-type: square;
+    color: #332277;
+    line-height: 230%;
+    margin-top: 40px;
+  }
+  
+  nav a {
+    color: #7711CC;
+  }
+  
+  nav a:visited {
+    color: #8822DD;
+  }
+  header {
+    display: block;
+    margin-bottom: 1px;
+  }
+  nav {
+    display: block;
+    width: 20%;
+    float: left;
+  }
+  
+  section {
+    display: block;
+    width: 70%;
+    float: right;
+  }
+  
+  h2 {
+    text-align: center;
+    width: 82%;
+  }
+  #listaComp {
+    width: 480px;
+    color: #000000;
+    background-color: #EEDDCC;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #000000;
+    margin: 0 auto;
+  
+  }
+  
+  #listaComp ul {
+    list-style-type: square;
+    color: #000;
+    padding: 0;
+    width: 50%;
+  }
+  
+  #listaComp li {
+    margin: 0 0 0.5em 0;
+    padding: 0 0 0.2em 0;
+  }
+  
+  #listaComp .preco {
+    color: #CC0000;
+    float: right;
+    font-weight: bold;
+  }
+  
+  strong {
+    display: block;
+    margin: 0 0 0.2em 0;  
+    text-align: left;
+  }
+  .apres img {
+    align-self: center;
+    float: left;
+  }
+  .apres p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  
+  nav ul {
+    list-style-type: square;
+    color: #332277;
+    line-height: 230%;
+    margin-top: 40px;
+  }
+  
+  nav a {
+    color: #7711CC;
+  }
+  
+  nav a:visited {
+    color: #8822DD;
+  }
+  header {
+    display: block;
+    margin-bottom: 1px;
+  }
+  nav {
+    display: block;
+    width: 20%;
+    float: left;
+  }
+  
+  section {
+    display: block;
+    width: 70%;
+    float: right;
+  }
+  .tabPiso {
+    border-collapse: collapse;
+    border: none;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #EEDDCC;
+    color: #000000;
+    font-family: Karla, Verdana, Ubuntu;
+  }
+
+  .tabPiso th {
+    border: 2px solid #888888;
+    padding: 6px 12px;
+    vertical-align: middle;
+  }
+  
+  .tabPiso td {
+    border: 2px solid #000066;
+    padding: 6px 12px;
+  }
+  
+  .titulo {
+    background-color: #442222;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .linTH {
+    background-color: #884444;
+    color: #FFFFFF;
+    vertical-align: middle;
+  }
+  
+  .colTH {
+    background-color: #442222;
+    color: #FFFFFF;
+  }
+  
+  .preco {
+    color: #CC0000;
+  }
+  
+  .imgCel {
+    background-color: #FFFFFF;
+  }
+  
+  .imgCel img {
+    width: 60px;
+    height: 60px;
+
+  }
+  .FormBox {
+    width: 540px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #EEDDCC;
+    border: 3px solid #000055;
+    font-size: 16px;
+    font-family: 'Karla', 'Verdana', 'Ubuntu';
+    color: #000000;
+  }
+  
+  .FSLinhaInteira {
+    width: 94%;
+    text-align: left;
+  }
+  
+  .FSLinha {
+    width: 96%;
+    display: block;
+    margin: 0;
+  }
+  
+  .FSEsq {
+    display: inline;
+    float: left;
+    margin: 0;
+  }
+  
+  .FSDir {
+    display: inline;
+    float: right;
+    margin: 0;
+  }
+  
+  .LinhaForm {
+    margin: 0;
+    height: 30px;
+    padding: 6px 3px 0px 3px;
+  }
+  
+  .colPerc25 {
+    padding-top: 10px;
+    float: left;
+    height: 30px;
+    width: 25%;
+  }
+  
+  .colPerc40 {
+    padding-top: 10px;
+    float: right;
+    height: 30px;
+    width: 40%;
+  }
+  
+  .colPerc50 {
+    padding-top: 10px;
+    float: left;
+    vertical-align: middle;
+    height: 30px;
+    width: 50%;
+  }
+  
+  .colPerc60 {
+    padding-top: 10px;
+    float: left;
+    height: 30px;
+    width: 60%;
+  }
+  
+  .selecPerc100Cel {
+    width: 100%;
+  }
+  
+  .elemPosDir {
+    float: right;
+  }
+  
+  .elemPosEsq {
+    float: left;
+  }
+  
+  .botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+  }
+  
+  .InpBoxMed {
+    width: 80px;
+  }
+  
+  .numDD {
+    width: 35px;
+  }
+  
+  .boxPedidos {
+    height: 100px;
+  }
+  
+  .lisPedArea {
+    height: 90%;
+    width: 100%;
+  }
+
+  .colPri {
+    width: 90px;
+    float: left;
+    display: block;
+  }
+  
+  .colLabCrd {
+    width: 270px;
+    height: 45px;
+    text-align: left;
+    float: left;
+  }
+  
+  .colValTot {
+    width: 220px;
+    text-align: left;
+    float: left;
+    display: block;
+  }
+  
+  .listaCompras {
+    width: 190px;
+    height: 200px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: right;
+  }
+  
+  .inpBoxGnd {
+    width: 380px;
+  }
+  
+  .numQD {
+    width: 50px;
+  }
+  
+  .inpNCC {
+    width: 130px;
+  }
+  
+  .inpTelef {
+    width: 90px;
+  }
+  
+  .inpEnder {
+    width: 180px;
+    height: 60px;
+  }
+  .menuTab {
+    height: 80px;
+}
+
+.celDesc {
+  width: 240px;
+  background-color: #ffffff;
+
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refresca Pe Piso Frio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <img src="imagens/RefrescaPeTopo.png" alt="Topo da página"
+    class ="imgLogo">
+      </header>
+      <nav>
+        <ul>
+          <li><a href="Apresentação.html">Apresentação</a></li>
+          <li><a href="Porcelanatos.html">Porcelanatos</a></li>
+          <li><a href="Complementos.html" >Complementos</a></li>
+          <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <form action="#" class="FormBox" name="identificação">
+
+          <fieldset class="FSLinhaInteira">
+            <legend>Identificação</legend>
+
+
+            <div class="LinhaForm">
+                <label for="nome" class="colPri">Nome:</label>
+                <input type="text" id="nome" name="nome" class="inpBoxGnd">
+              </div>
+
+              <div class="LinhaForm">
+                <label for="email" class="colPri">E-mail:</label>
+                <input type="text" id="email" name="email" class="inpBoxGnd" required>
+              </div>
+
+              <fieldset class="FSDir">
+                <legend>Gênero:</legend>
+                <label for="male">Mas:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">Fem:</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="other">Outro:</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+              </fieldset>
+
+              <div>
+                <label for="endereco" class="colPri">Endereço:</label>
+                <textarea name="Endereço" id="endereco" class="inpEnder">
+                </textarea>
+              </div>
+              
+              <fieldset class="FSDir">
+                <legend>Data de Nascimento</legend>
+                <input type="number" name="dia" id="dia" class="numDD">/
+                <input type="number" name="mes" id="mes" class="numDD">/
+                <input type="number" name="ano" id="ano" class="numDD">
+              </fieldset>
+                
+                <div class="LinhaForm">
+                  <label for="telefone" class="colPri">Telefone:</label>
+                  <input type="text" id="telefone" name="telefone" class="inpTelef">
+                </div>
+              
+              <div class="LinhaForm">
+                <label for="celular" class="colPri">Celular:</label>
+                <input type="tel" id="celular" name="celular" class="inpTelef">
+              </div>
+          </fieldset>
+              
+              <fieldset class="FSLinhaInteira">
+                <legend>Pagamento</legend>
+
+               <textarea name="listaCompras" id="listaCompras" class="listaCompras" readonly></textarea>
+               
+               <fieldset>
+                <legend>Cartão</legend>
+
+                <div class="colLabCrd">
+                  <div class="FSEsq">Bandeira:</div>
+                  <div>
+                    <input type="radio" name="bandeira" id="visa">
+                    <label for="visa">Visa</label>
+                  
+                    <input type="radio" name="bandeira" id="master">
+                    <label for="master">Master</label>
+                  
+                    <input type="radio" name="bandeira" id="elo">
+                    <label for="elo">Elo</label>
+                  </div>
+                </div>
+
+                <div class="colLabCrd">
+                  <div class="colPri">Validade:</div>
+                  <input type="number" name="mes" id="mes" class="numDD">/
+                <input type="number" name="ano" id="ano" class="numDD">
+                </div>
+
+                <div class="colLabCrd">
+                  <label for="numero" class="colPri">Número:</label>
+                  <input type="text" id="numero" name="numero" class="inpNCC">
+                </div>
+             </fieldset>
+
+             <br>
+             <br>
+              <div class="colValtot">
+                <label for="valorTotal" class="colPri" >Valor Total:</label>
+                <input type="text" id="valorTotal" name="valorTotal" class="colValtot">
+              </div>
+              </fieldset>
+
+              <div class="botoes">
+                <input type="submit" name="enviar"
+                value="Enviar">
+                <input type="reset" name="limpar" value="Limpar">
+              </div>
+        </form>
+      </section> 
+</body>
+</html>

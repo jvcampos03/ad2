@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresca Pe Piso Frio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="javascript/3.js" language=javascript></script>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/RefrescaPeTopo.png" alt="Topo da página" class="imgLogo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Apresentação.html">Apresentação</a></li>
+            <li><a href="Porcelanatos.html">Porcelanatos</a></li>
+            <li><a href="Complementos.html">Complementos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form action="/html/identificação.html" method="get" name="pedidos" class="FormBox">
+        <fieldset class="FSLinhaInteira">
+                <legend>Seleção de Produtos</legend>
+
+                <fieldset name="pisosErodapes" class="product-fieldset">
+                    <legend>Pisos e Rodapés</legend>
+                    <div class="product-container">
+                        <div class="colPerc50">
+                            <select name="pisosErodapes" id="produtoList" class="selecPerc100Cel"
+                                onchange="atualizarCampos(this.selectedIndex);atualizarRotulo(this.selectedIndex)">
+                                <option value="" selected>-----</option>
+                                <optgroup label="Porcelanato">
+                                    <option value="cimenticioPortinari">Cimentício Bege Portinari</option>
+                                    <option value="decoradoBiancogres">Decorado Fiori Di Lotus Biancogres</option>
+                                    <option value="marmorizadoBiancogres">Marmorizado Beige Lux Biancogres</option>
+                                    <option value="amadeiradoEliane">Amadeirado Nogueira Eliane</option>
+                                </optgroup>
+
+                                <optgroup label="Rodapé">
+                                    <option value="levSantaLuzia">LEV 102 Branco Santa Luzia</option>
+                                    <option value="mdfNogueira">MDF Modulfarma 1002 Nogueira</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+<div>
+    <span class="colPerc25">
+        <label for="areametros"><span id="medida">Área</label>
+            <input type="text" name="areametros" id="areametros" class="numDD" oninput="calcularTotal(this.value, this.parentNode.parentNode.querySelector('#productList').selectedIndex)">
+            &rArr;
+        </span> 
+
+            <span class="colPerc25">
+        <input type="text" name="caixaspeças" id="caixaspeças"   class="numDD" readonly>
+        <label for="caixaspeças"><span id="unidvenda">Caixas</label></span>
+    </span>
+</div>
+                <div class="total-container">
+                 <div class="colPerc60">
+                     <label for="totalParcial">Total Parcial: R$ </label>
+                    <input type="text"
+                    name="totalParcial" id="totalParcial" readonly class="InpBoxMed">
+
+                        </div>
+                        <div class="colPerc40">
+                            <input type="button" value="Incluir Produto" class="elemPosDir">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset name="complementos" class="product-fieldset">
+                    <legend>Complementos</legend>
+                    <div class="product-container">
+                        <div class="colPerc50">
+                            <select name="complementos" id="complementos" class="product-select">
+                                <option value="" selected>-----</option>
+                                <option value="espacadorStanders">Espaçador 2mm 300 peças Standers</option>
+                                <option value="argamassaAxton">Argamassa Branca 20kg Axton</option>
+                                <option value="rejunteAxton">Rejunte Marfim 1kg Axton</option>
+                                <option value="colaSantaLuzia">Cola para Moldura 400g Santa Luzia</option>
+                            </select>
+                        </div>
+
+                        <span class="colPerc50">
+                            <label for="QtdMaq" class="elemPosDir">Quantidade:&nbsp;
+                                <input type="text" name="QtdMaq" readonly id="QtdMaq" class="numDD"></label></span>
+                    </div>
+
+                    <div class="total-container">
+                        <div class="colPerc60">
+                            <label id="totalParcial" for="totalParcial">Total Parcial:R$&nbsp;
+                            </label>
+                            <input type="text" name="totalParcial" id="totalParcial" readonly class="InpBoxMed">
+                        </div>
+                        <div class="colPerc40">
+                            <input type="button" value="Incluir Produto" class="elemPosDir">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <textarea name="listaDeCompras" id="listaDeCompras" cols="65" rows="5" class="boxPedidos"
+                    readonly></textarea>
+                <br>
+                <br>
+
+                <fieldset class="FSLinhaInteira">
+                    <div class="colPerc50">
+                        <label for="total">Valor Total R$</label>
+                        <input type="text" name="total" id="total" readonly class="InpBoxMed">
+                    </div>
+                </fieldset>
+
+                <div class="botoes">
+
+                    <input type="submit" name="continuar" value="Continuar" class="botoes">
+                    <input type="reset" name="limpar" value="Limpar">
+                </div>
+            </fieldset>
+        </form>
+</body>
+
+</html>
